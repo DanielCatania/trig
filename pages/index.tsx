@@ -27,7 +27,7 @@ export default function Home() {
   });
 
   return (
-    <>
+    <main>
       <form>
         <label>
           <span>Cateto Adjacente:</span>
@@ -69,9 +69,16 @@ export default function Home() {
           Calcular
         </button>
       </form>
-      <pre>{JSON.stringify(sides, null, 3)}</pre>
-      <pre>{JSON.stringify(values, null, 3)}</pre>
-    </>
+      <p>
+        <span>Seno:</span> {values.sine}
+      </p>
+      <p>
+        <span>Cosseno:</span> {values.cosine}
+      </p>
+      <p>
+        <span>Tangente:</span> {values.tangent}
+      </p>
+    </main>
   );
 }
 
